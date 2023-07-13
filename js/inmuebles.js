@@ -4,7 +4,7 @@ createApp({
     data(){
         return{
            inmuebles: [],
-           url: 'http://emaldonadomay.pythonanywhere.com/inmuebles', // url: 'http://127.0.0.1:5000/inmuebles', 
+           url: 'https://emaldonadomay.pythonanywhere.com/inmuebles', // url: 'http://127.0.0.1:5000/inmuebles', 
            cargando: true,
            error: false
         }
@@ -25,7 +25,7 @@ createApp({
         },
 
         eliminar(inmueble) {
-            const url = 'http://emaldonadomay.pythonanywhere.com/inmuebles/'+inmueble; // const url = 'http://localhost:5000/inmuebles/'+inmueble;
+            const url = 'https://emaldonadomay.pythonanywhere.com/inmuebles/'+inmueble; // const url = 'http://localhost:5000/inmuebles/'+inmueble;
             let options = {
                 method: 'DELETE'
             }
