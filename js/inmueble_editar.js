@@ -1,7 +1,7 @@
 console.log(location.search) // lee los argumentos pasados a este formulario
 var id=location.search.substring(4)
 console.log(id)
-url = 'http://emaldonadomay.pythonanywhere.com/inmuebles/'+id; // url = 'http://localhost:5000/inmuebles/'+id;
+url = 'https://emaldonadomay.pythonanywhere.com/inmuebles/'+id; // url = 'http://localhost:5000/inmuebles/'+id;
 // console.log(url)
 
 fetch(url)
@@ -37,7 +37,7 @@ function editaInmueble(){
     }
 
     id = document.getElementById('idInmueble').value;
-    url = 'http://emaldonadomay.pythonanywhere.com/inmuebles/'+id; // url = 'http://localhost:5000/inmuebles/'+id;
+    url = 'https://emaldonadomay.pythonanywhere.com/inmuebles/'+id; // url = 'http://localhost:5000/inmuebles/'+id;
 
     let options = {
         body:JSON.stringify(inmueble),
