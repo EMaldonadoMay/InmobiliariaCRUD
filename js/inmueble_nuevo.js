@@ -18,7 +18,7 @@ function altaInmueble() {
     
     console.log(inmueble)
 
-    let url = 'http://emaldonadomay.pythonanywhere.com/inmuebles'; // let url = 'http://localhost:5000/inmuebles';
+    let url = 'https://emaldonadomay.pythonanywhere.com/inmuebles'; // let url = 'http://localhost:5000/inmuebles';
 
     let options = {
         body: JSON.stringify(inmueble),
