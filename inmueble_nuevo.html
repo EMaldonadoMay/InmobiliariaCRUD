@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Nuevo Inmueble</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header id="header"></header>
+
+  <main>
+    <div id="app" class="container">
+      <h1 style="color:#4C4B16">ALTA INMUEBLE</h1>
+
+      <form class="row align-items-center rounded-2" style="background-color: #7b5f0580; margin:10px auto; padding: 20px;">
+                
+        <div class="row mb-3">
+          <label for="nombre" class="col-sm-2 col-form-label text"><strong>Descripcion</strong></label>
+          <div class="col-sm-auto">
+            <input type="text" class="form-control" name="nombre" id="nombre" required maxlength="100" size="100" placeholder="descripcion de referencia">
+          </div>          
+        </div>
+        
+        <div class="row mb-3">
+          <label for="categoria" class="col-sm-2 col-form-label"><strong>Categoria</strong></label>
+          <div class="col-sm-auto">
+            <select class="form-select" name="categoria" id="categoria">
+              <option value="casa">Casa</option>
+              <option value="departamento">Departamento</option>
+              <option value="lote">Lote</option>
+            </select>
+          </div>
+          <!-- <input type="text" name="categoria" id="categoria"> -->
+        </div>
+
+        <div class="row mb-3">
+          <label for="operacion" class="col-sm-2 col-form-label"><strong>Operacion</strong></label>
+          <div class="col-sm-auto">
+            <select class="form-select" name="operacion" id="operacion">
+              <option value="venta">Venta</option>
+              <option value="alquiler">Alquiler</option>
+              <option value="alquiler temporal">Alquiler Temporal</option>
+            </select>
+          </div>
+          <!-- <input type="text" name="operacion" id="operacion"> -->
+        </div>
+
+        <div class="row mb-3">
+          <label for="barrio" class="col-sm-2 col-form-label"><strong>Barrio</strong></label>
+          <div class="col-sm-auto">
+            <input type="text" class="form-control" name="barrio" id="barrio" required maxlength="50" size="50">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="m2" class="col-sm-2 col-form-label"><strong>Metros Cuadrados</strong></label>
+          <div class="col-sm-1">
+            <input type="number" class="form-control" name="m2" id="m2" min="0" placeholder="0">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="ambientes" class="col-sm-2 col-form-label"><strong>Ambientes</strong></label>
+          <div class="col-sm-1">
+            <input type="number" class="form-control" name="ambientes" id="ambientes" required min="1" placeholder="1">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="precio" class="col-sm-2 col-form-label"><strong>Precio (u$s)</strong></label>
+          <div class="col-sm-2">
+            <input type="number" class="form-control" name="precio" id="precio" min="0" placeholder="0">
+         </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="foto" class="col-sm-2 col-form-label"><strong>URL Foto</strong></label>
+          <div class="col-sm-auto">
+            <input type="text" class="form-control" name="foto" id="foto" placeholder="URL de la foto del frente" maxlength="200" size="100">
+            <img class="m-2 rounded-2" id="imagenFoto" src="foto" alt="nombre" width="200" height="200">
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-success" onclick="altaInmueble()">GRABAR</button>
+          <button type="reset" class="btn btn-warning">LIMPIAR</button>
+          <a class="btn btn-danger" href="inmuebles.html">CANCELAR</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer></footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  
+  <script src="./js/main.js"></script>
+  <script src="./js/inmueble_nuevo.js"></script>
+</body>
+
+</html>
