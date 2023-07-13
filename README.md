@@ -1,2 +1,5 @@
 # InmobiliariaCRUD
-FrontEnd para el CRUD de la Inmobiliaria
+#### Desarrollo de FrontEnd-CRUD para Inmuebles de la Inmobiliaria URBAN
+HTML, CSS, JS, VUE y BootStrap
+API desarrollada en Python y Flask
+##
